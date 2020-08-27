@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="Bootstrap" transform="translate(-719 -1093)">
+    <path id="Caminho_5" data-name="Caminho 5" d="M30,0A30,30,0,1,1,0,30,30,30,0,0,1,30,0Z" transform="translate(719 1093)"/>
+    <g id="icons8-bootstrap" transform="translate(825 1096)">
+      <path id="Caminho_2" data-name="Caminho 2" d="M33.03,25.6a4.929,4.929,0,0,0-2.8-1.85A4.5,4.5,0,0,0,32.17,22,5.883,5.883,0,0,0,33,18.82a5.716,5.716,0,0,0-2.34-4.93A9.839,9.839,0,0,0,24.35,12H15V36H25.43c2.83-.02,4.96-.63,6.41-1.8A6.469,6.469,0,0,0,34,28.9,5.483,5.483,0,0,0,33.03,25.6ZM21,16h4.25a2.75,2.75,0,0,1,0,5.5H21Zm5,16H21V26h5a3,3,0,0,1,0,6Z" transform="translate(-100 3)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
