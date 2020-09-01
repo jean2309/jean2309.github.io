@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header id="menuOff" class="header">
       <button
         class="btnmobile"
         data-menu="button"
@@ -20,18 +20,19 @@
       >
         Menu
       </button>
-
-      <nav id="menuOff" class="menu menu-suave">
-        <ul data-menu="list" id="menu">
-          <li class="logo">
-            <a href="#intro"><img src="img/logoteste.png" alt="JeanDev" /></a>
-          </li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#tecnologias">Tecnologias</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
+      <div id="menu" class="container">
+        <a href="index.html" class="grid-2">
+          <img src="img/logoteste.png" alt="Bikcraft" />
+        </a>
+        <nav class="grid-10 header_menu">
+          <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#tecnologias">Tecnologias</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <section id="intro">
@@ -76,33 +77,33 @@
     <section id="tecnologias">
       <h2>tecnologias</h2>
       <div class="container tec">
-        <ul class="anime-right">
+        <ul class="scroll-anime">
           <li class="grid-mobile-4">
             <img src="img/html1.png" alt="HTML5" />
-            <h4>HTML5</h4>
+            <p>HTML5</p>
           </li>
           <li class="grid-mobile-4">
             <img src="img/css31.png" alt="" />
-            <h4>CSS3</h4>
+            <p>CSS3</p>
           </li>
           <li class="grid-mobile-4">
             <img src="img/javascript1.png" alt="" />
-            <h4>Javascript</h4>
+            <p>Javascript</p>
           </li>
         </ul>
 
         <ul class="scroll-anime">
           <li class="grid-mobile-4">
             <img src="img/Bootstrap1.png" alt="" />
-            <h4>Bootstrap</h4>
+            <p>Bootstrap</p>
           </li>
           <li class="grid-mobile-4">
             <img src="img/sass1.png" alt="" />
-            <h4>Sass</h4>
+            <p>Sass</p>
           </li>
           <li class="grid-mobile-4">
             <img src="img/react1.png" alt="" />
-            <h4>React</h4>
+            <p>React</p>
           </li>
         </ul>
       </div>
@@ -131,11 +132,11 @@
 
           <a class="btnproject" href="#">Github</a>
         </div>
-        <div class="grid-12 anime-right">
+        <div class="grid-12">
           <h3>Projeto teste2</h3>
         </div>
 
-        <div class="contrario grid-12 anime-right">
+        <div class="contrario grid-12 scroll-anime">
           <a href="#">
             <img src="img/ptf2.png" alt="" />
           </a>
@@ -171,20 +172,20 @@
     </section>
 
     <section id="contato">
-      <div class="container contact anime-right">
+      <div class="container contact scroll-anime">
         <div class="grid-12">
           <h2>contato</h2>
         </div>
         <div class="icon-contato">
           <ul>
             <li>
-              <a href=""><img src="img/whatsappblue.png" alt="whatsapp" /> </a>
+              <a href=""><img src="img/whatsappblue.png" alt="whatsapp" /></a>
             </li>
             <li>
-              <a href=""><img src="img/linkedinblue.png" alt="linkedin" /> </a>
+              <a href=""><img src="img/linkedinblue.png" alt="linkedin" /></a>
             </li>
             <li>
-              <a href=""><img src="img/githubblue.png" alt="github" /> </a>
+              <a href=""><img src="img/githubblue.png" alt="github" /></a>
             </li>
           </ul>
         </div>

@@ -137,10 +137,7 @@ h2::after {
   margin: 0 auto;
 }
 body {
-  background: #222222;
-}
-a {
-  color: #000;
+  background: #fff;
 }
 
 img {
@@ -150,53 +147,45 @@ img {
 
 /*HEADER*/
 .header {
-  width: 100%;
-  background: red;
-}
-/*MENU*/
-
-.menu ul li a:hover {
-  color: #0085be;
-}
-
-.menu ul li {
-  display: inline-block;
-  font-weight: bold;
-}
-
-.menu {
   position: fixed;
-  z-index: 3;
   top: 0;
-  transition: 1s;
+  width: 100%;
+  padding: 15px 0;
+  z-index: 10;
 }
-.menu ul li:nth-child(1) {
-  float: left;
-}
-.menu ul {
+
+.header_menu {
   text-align: right;
 }
 
-.menu li a {
-  color: #fff;
-  display: block;
-  padding: 20px 20px;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: 1s;
+.header_menu ul li {
+  display: inline-block;
+  margin-left: 25px;
+  margin-top: 5px;
 }
 
-#menu .logo a {
-  padding: 10px 0 0 0;
-  margin-left: 60px;
+.header_menu ul li a {
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 0;
 }
-.logo {
-  display: inline-block;
+
+.header_menu ul li a:hover {
+  color: #0085be;
 }
-@media (max-width: 739px) {
-  #menu .logo {
-    display: none;
-  }
+
+.header_menu ul li a.menu_ativo {
+  color: #0085be;
+}
+
+.colorLink li a {
+  color: purple;
+  transition: 1s;
+}
+.scroll-menu-on {
+  background: rgba(0, 0, 0, 1);
+  transition: 2s;
 }
 .btnmobile {
   display: none;
@@ -246,20 +235,18 @@ img {
     display: block;
     animation: scroll-anime 0.3s forwards;
   }
-}
-
-.colorLink li a {
-  color: #fff;
-  transition: 1s;
-}
-.scroll-menu-on {
-  background: rgba(0, 0, 0, 0.9);
-  transition: 2s;
-}
-@media (max-width: 739px) {
   .scroll-menu-on {
-    background: #fff;
-    transition: 2s;
+    background: none;
+    transition: none;
+  }
+  .header_menu {
+    text-align: left;
+  }
+  .header_menu ul li {
+    margin-top: 20px;
+  }
+  .header a img {
+    margin: 20px auto;
   }
 }
 
@@ -342,18 +329,17 @@ img {
 
 .tec img {
   margin: 0 auto;
-  border: #fff 1px solid;
+  border: #0085be 1px solid;
   border-radius: 50%;
 }
 .tec img:hover {
   border: #000 1px solid;
 }
-.tec h4 {
+.tec p {
   font-size: 1em;
   line-height: 1em;
   background: #0085be;
   color: #fff;
-  font-weight: normal;
   text-align: center;
   position: relative;
   width: 100%;
@@ -386,9 +372,8 @@ img {
   font-weight: bold;
   letter-spacing: 2px;
   display: inline-block;
-  background: #0085be;
   color: #000;
-  border: #fff 2px solid;
+  border: #0085be 2px solid;
   border-radius: 50px;
   padding: 15px 35px;
   cursor: pointer;
@@ -407,13 +392,14 @@ img {
 
 .icon-contato ul li {
   display: inline-block;
-  margin: 0px 20px 60px 0px;
+  margin: 0px 20px 60px 20px;
 }
 .icon-contato {
   text-align: center;
 }
 .icon-contato img {
-  border: #fff 2px solid;
+  max-width: 80px;
+  border: #0085be 2px solid;
   border-radius: 100px;
   box-shadow: 5px 5px rgba(0, 0, 0, 0);
 }
@@ -442,13 +428,7 @@ img {
   transform: translate3d(-100px, 0, 0);
   transition: 1s;
 }
-.js .anime-right {
-  opacity: 0;
-  transform: translate3d(-10px, 0, 0);
-  transition: 1s;
-}
-.js .scroll-anime.ativo,
-.anime-right.ativo {
+.js .scroll-anime.ativo {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }

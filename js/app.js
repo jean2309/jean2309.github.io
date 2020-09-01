@@ -21,7 +21,7 @@ initScrollSuave();
 //Animação no Scroll
 
 function initAnimacaoScroll() {
-  const sections = document.querySelectorAll(".scroll-anime, .anime-right");
+  const sections = document.querySelectorAll(".scroll-anime");
   if (sections.length) {
     const windowMetade = window.innerHeight * 0.8;
 
@@ -69,9 +69,9 @@ function initScrolMenuInvisivel() {
       document.documentElement.scrollTop > 10
     ) {
       document.getElementById("menuOff").className =
-        "scroll-menu-on colorLink menu menu-suave";
+        "scroll-menu-on colorLink header";
     } else {
-      document.getElementById("menuOff").className = "menu menu-suave";
+      document.getElementById("menuOff").className = "header";
     }
   }
 }
@@ -82,7 +82,7 @@ initScrolMenuInvisivel();
 function initMenuMobile() {
   const menuButton = document.querySelector('[data-menu="button"]');
   const menuList = document.querySelector("#menu");
-  const eventos = ["click", "touchstart"];
+  const eventos = ["click"];
 
   function openMenu(event) {
     menuList.classList.add("active");
@@ -117,3 +117,14 @@ function initMenuMobile() {
   });
 }
 initMenuMobile();
+
+/*teste menu ativo*/
+
+function mostrarAtivo(tag) {
+  var tag_li = document.querySelector(".header_menu");
+  var tag_a = tag_li.getElementsByTagName("a");
+  for (i = 0; i < tag_a.length; i++) {
+    tag_a[i].style.color = "";
+  }
+  tag.style.color = "#ff0000";
+}
