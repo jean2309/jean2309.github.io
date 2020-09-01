@@ -154,6 +154,10 @@ img {
   z-index: 10;
 }
 
+.header a img {
+  border: #0085be 2px solid;
+  border-radius: 10px;
+}
 .header_menu {
   text-align: right;
 }
@@ -175,14 +179,6 @@ img {
   color: #0085be;
 }
 
-.header_menu ul li a.menu_ativo {
-  color: #0085be;
-}
-
-.colorLink li a {
-  color: purple;
-  transition: 1s;
-}
 .scroll-menu-on {
   background: rgba(0, 0, 0, 1);
   transition: 2s;
@@ -247,6 +243,8 @@ img {
   }
   .header a img {
     margin: 20px auto;
+    border: #0085be 2px solid;
+    border-radius: 10px;
   }
 }
 
@@ -352,30 +350,31 @@ img {
 }
 
 /*PROJETO*/
+.zoom {
+  overflow: hidden;
+}
+.zoom img {
+  max-width: 100%;
+  transition: all 0.3s;
+}
+.zoom:hover img {
+  transform: scale(1.2);
+}
 
 #projetos h3 {
   text-align: center;
-  padding: 60px 0px 20px 0px;
+  padding: 60px 0px 40px 0px;
   font-size: 1.725em;
-}
-.project p {
-  padding: 20px 0px;
-}
-.project img {
-  padding: 20px 0px;
-}
-.contrario img {
-  float: right;
 }
 
 .btnproject {
+  margin-top: 20px;
   font-weight: bold;
-  letter-spacing: 2px;
   display: inline-block;
   color: #000;
   border: #0085be 2px solid;
   border-radius: 50px;
-  padding: 15px 35px;
+  padding: 10px 35px;
   cursor: pointer;
   box-shadow: 5px 5px rgba(0, 0, 0, 0);
 }
@@ -385,9 +384,12 @@ img {
   transition: 0.3s;
   box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
 }
-/*arrumar btn*/
-@media (max-width: 306px) {
+@media (max-width: 739px) {
+  .project p {
+    margin-top: 20px;
+  }
 }
+
 /*CONTATO*/
 
 .icon-contato ul li {

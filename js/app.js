@@ -68,8 +68,7 @@ function initScrolMenuInvisivel() {
       document.body.scrollTop > 10 ||
       document.documentElement.scrollTop > 10
     ) {
-      document.getElementById("menuOff").className =
-        "scroll-menu-on colorLink header";
+      document.getElementById("menuOff").className = "scroll-menu-on header";
     } else {
       document.getElementById("menuOff").className = "header";
     }
@@ -117,14 +116,3 @@ function initMenuMobile() {
   });
 }
 initMenuMobile();
-
-/*teste menu ativo*/
-
-function mostrarAtivo(tag) {
-  var tag_li = document.querySelector(".header_menu");
-  var tag_a = tag_li.getElementsByTagName("a");
-  for (i = 0; i < tag_a.length; i++) {
-    tag_a[i].style.color = "";
-  }
-  tag.style.color = "#ff0000";
-}
