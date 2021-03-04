@@ -159,6 +159,13 @@ section h1 {
   cursor: pointer;
 }
 
+@media (max-width: 739px) {
+  .option:hover {
+    background-color: white;
+    color: #363636;
+  }
+}
+
 .option-correta {
   padding: 10px;
   border-radius: 20px;

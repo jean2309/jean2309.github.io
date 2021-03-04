@@ -138,7 +138,7 @@ h2::after {
   margin: 0 auto;
 }
 body {
-  background: #d9d9d9;
+  background: #f0f0f0;
 }
 
 img {
@@ -412,6 +412,32 @@ p {
   .project p {
     margin-top: 20px;
   }
+}
+
+.tecnologiasProjeto {
+  margin-top: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+.tecnologiasProjeto p::after {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 2px;
+  background: #0085be;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.tecnologiasProjeto img:hover {
+  border: 2px solid #000;
+}
+
+.tecnologiasProjeto img {
+  display: inline-block;
+  max-width: 10%;
+  border-radius: 50%;
+  border: 2px solid #0085be;
+  margin: 0 auto;
 }
 /*PROJETO FIM*/
 
