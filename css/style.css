@@ -145,6 +145,10 @@ img {
   max-width: 100%;
   display: block;
 }
+p {
+  line-height: 24px;
+}
+
 /*ESTILOS GERAIS FIM*/
 
 /*HEADER*/
