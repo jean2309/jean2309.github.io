@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMC</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>  
+<section id="imc" class="container calculadoraimc">
+
+<h1>CALCULADORA IMC</h1>
+
+  <div class="card container">
+
+    <form class="input">
+      <label class="pes"> Digite o peso em Kg </label>
+      <input type="text" id="peso" inputmode="numeric" maxlength="3" required=""  placeholder="000" >      
+      <label> Digite a altura em cm </label>
+    <input type="text" id="altura" inputmode="numeric" maxlength="3" required placeholder="000" >
+    
+<div class="grid-12">
+  <button type="button" class="btn"  id="calcular"> Calcular </button>
+</div>
+
+
+<div class="result"> 
+  <h2>Seu IMC é:</h2>
+ <div class="resultado">    
+ </div>  
+
+<div  id="magreza" >  
+
+<h3> Magreza </h3>
+<p>É sinal de falta de vários nutrientes fundamentais para o organismo como vitaminas e proteínas.
+</p>
+</div>
+
+<div  id="normal">  
+<h3> Normal </h3>
+<p>É sinal de uma boa alimentação, com uma regularidade nas alimentações e atividades fisicas.</p>
+</div>
+
+<div  id="sobrepeso">  
+<h3> Sobrepeso </h3>
+<p>É sinal de estar comendo excessivamente ou de falta de exercicios.</p>
+</div>
+
+<div  id="obesidade">  
+<h3> Obesidade nivel 1 </h3>
+<p>É sinal de falta de atividades físicas e alimentação em excesso</p>
+</div>
+
+<div  id="obesidadeSeria">  
+<h3> Obesidade Nivel 2 </h3>
+<p>É sinal de falta de atividades físicas, alimentação em excesso e desregulada.</p>
+</div>
+
+<div  id="obesidadeGrave">  
+<h3> Obesidade nivel 3 </h3>
+<p>É o nivel mais grave de obesidade, a falta de exercicios e a alimentação em execesso e desregulada, pode causar outras doenças.</p>
+</div>
+
+</div>
+    </form> 
+    
+
+
+</div>
+</section>
+
+<section id="SOBRE" class="sobre">
+
+  <div class="container">
+    <h1>SOBRE</h1>
+
+    <div class="txt grid-6">
+      <h2>O que é IMC</h2>
+      <p>
+      O Índice de Massa Corporal, ou IMC, é uma fórmula simples que indica se o peso de uma pessoa está em conformidade com sua altura. Por isso, esses valores entram na fórmula para calcular em que categoria cada um se enquadra. Por meio do resultado, é possível saber se você está no peso ideal, abaixo dele ou chegando à obesidade.
+      </p>
+    </div>
+
+    <!-- SEPARADOR -->
+    <div class="grid-1"></div>
+    
+    <div class="txt grid-5">
+
+      
+      <table border="1">
+        <tr>
+            <th>IMC</th>
+            <th>Resultado</th>
+        </tr>
+        <tr>
+            <td>Menos do que 18,5</td>
+            <td>Abaixo do peso</td>
+        </tr>
+        <tr>
+            <td>Entre 18,5 e 24,9</td>
+            <td>Peso normal</td>
+        </tr>
+        <tr>
+          <td>Entre 25 e 29,9</td>
+          <td>Sobrepeso</td>
+      </tr>
+      <tr>
+        <td>Entre 30 e 34,9</td>
+        <td>Obesidade grau 1</td>
+    </tr>
+    <tr>
+      <td>Entre 35 e 39,9</td>
+      <td>Obesidade grau 2</td>
+  </tr>
+  <tr>
+    <td>Mais do que 40</td>
+    <td>Obesidade grau 3</td>
+</tr>
+    </table>
+    </div>
+    
+  </div>
+  
+
+
+</section>  
+
+<footer>
+
+  
+  <div class="container ">
+
+    <div class="rodape">
+    <div class="info">
+      <p>
+        Fontes consultadas: <a href="http://www.blog.saude.gov.br/index.php/promocao-da-saude/53751-o-que-o-indice-de-massa-corporal-imc-diz-sobre-sua-saude " target="_blank">Blog da Saúde
+          MINISTÉRIO DA SAÚDE</a>.
+      </p>
+      <p>As informações propostas nesse site não constituem em um diagnóstico médico sobre a saúde, para melhor avaliação consulte um médico.</p>
+    </div>
+
+  </div>
+  </div>
+  
+<div class="copy">    
+  <p>Todos os direitos reservados!</p>
+  </div>
+</footer>
+
+
+<script src="js/app.js"></script>
+</body>
+</html>
+

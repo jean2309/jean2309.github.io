@@ -1,0 +1,349 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* GRID */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.container::after,
+.container::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+.grid-1,
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5,
+.grid-6,
+.grid-7,
+.grid-8,
+.grid-9,
+.grid-10,
+.grid-11,
+.grid-12 {
+  margin-left: 10px;
+  margin-right: 10px;
+  float: left;
+  display: block;
+  min-height: 1px;
+}
+
+.grid-1 {
+  width: calc(8.333% - 20px);
+}
+
+.grid-2 {
+  width: calc(16.666% - 20px);
+}
+
+.grid-3 {
+  width: calc(25% - 20px);
+}
+
+.grid-4 {
+  width: calc(33.333% - 20px);
+}
+
+.grid-5 {
+  width: calc(41.666% - 20px);
+}
+
+.grid-6 {
+  width: calc(50% - 20px);
+}
+
+.grid-7 {
+  width: calc(58.333% - 20px);
+}
+
+.grid-8 {
+  width: calc(66.666% - 20px);
+}
+
+.grid-9 {
+  width: calc(75% - 20px);
+}
+
+.grid-10 {
+  width: calc(83.333% - 20px);
+}
+
+.grid-11 {
+  width: calc(91.666% - 20px);
+}
+
+.grid-12 {
+  width: calc(100% - 20px);
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 300px;
+  }
+  .grid-1,
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .grid-5,
+  .grid-6,
+  .grid-7,
+  .grid-8,
+  .grid-9,
+  .grid-10,
+  .grid-11,
+  .grid-12 {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    float: none;
+  }
+}
+/* GRID FIM */
+
+/* ESTILOS GERAIS */
+
+/* Color Theme Swatches in Hex 
+.curta-micro-1-1-hex { color: #4D0B9E; }
+.curta-micro-1-2-hex { color: #6E20D4; }
+.curta-micro-1-3-hex { color: #2DA2CC; }
+.curta-micro-1-4-hex { color: #00E8AE; }
+.curta-micro-1-5-hex { color: #03FFC4; }
+*/
+
+/* Color Theme Swatches in Hex 
+.AREA-DE-SAUDE-1-hex { color: #09BAB3; }
+.AREA-DE-SAUDE-2-hex { color: #39BDB7; }
+.AREA-DE-SAUDE-3-hex { color: #6FD6CE; }
+.AREA-DE-SAUDE-4-hex { color: #9CF0EB; }
+.AREA-DE-SAUDE-5-hex { color: #C7F2F2; }
+*/
+
+body {
+  line-height: 24px;
+  background-color: #c7f2f2;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+h1 {
+  text-align: center;
+  margin: 60px 0 0 0;
+  font-size: 2em;
+}
+/* ESTILOS GERAIS FIM*/
+
+/* CALCULADORA IMC */
+
+.calculadoraimc {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.calculadoraimc h1::after {
+  content: "";
+  display: block;
+  width: 15%;
+  height: 4px;
+  background: #fff;
+  margin: 5px auto;
+}
+
+.card {
+  background-color: #2da2cc;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  width: 400px;
+  height: 600px;
+  border-radius: 10%;
+  margin-top: 40px;
+}
+
+.input {
+  margin: 50px 10px;
+}
+
+.input label {
+  margin-top: 30px;
+  display: block;
+  font-size: 1.75em;
+}
+
+.input input {
+  width: 100px;
+  height: 40px;
+  font-size: 2em;
+  box-shadow: 1px 1px 7px 0 #000;
+  border: none;
+  text-align: center;
+  margin: 10px 0px 0px 0px;
+  scroll-behavior: smooth;
+}
+
+.btn {
+  margin: 30px 0;
+  background-color: #39bdb7;
+  border-radius: 20px;
+  color: #000;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 10px;
+  box-shadow: 1px 1px 20px 0 #000;
+  border: solid #09bab3 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+.btn:hover {
+  color: #fff;
+  background-color: #6fd6ce;
+  border: solid #39bdb7 1px;
+  transition: 0.2s;
+}
+
+.result {
+  background-color: #fff;
+  display: inline-block;
+  border-radius: 5%;
+  width: 100%;
+  height: 230px;
+}
+
+.result h3 {
+  color: #000;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.result p {
+  margin: 10px 0 0 0;
+  padding: 10px 5px;
+}
+
+.result span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.resultado {
+  display: none;
+  margin-top: 10px;
+  color: #2da2cc;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+#magreza {
+  background: cyan;
+  display: none;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+#normal {
+  background: green;
+  display: none;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+#sobrepeso {
+  background: yellowgreen;
+  display: none;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+#obesidade {
+  background: yellow;
+  display: none;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+#obesidadeSeria {
+  background: darkred;
+  display: none;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+#obesidadeGrave {
+  background: red;
+  display: none;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+/* CALCULADORA IMC FIM */
+
+.sobre {
+  background-color: #2da2cc;
+}
+.sobre h1::after {
+  content: "";
+  display: block;
+  width: 15%;
+  height: 4px;
+  background: #fff;
+  margin: 5px auto;
+}
+.txt {
+  font-size: 1.25em;
+  margin: 60px 0 0 0;
+}
+.txt h2 {
+  margin-bottom: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+table td {
+  padding: 10px 5px;
+}
+table th {
+  background-color: lavenderblush;
+  text-align: start;
+  padding: 5px 5px;
+}
+tr:nth-child(even) {
+  background-color: #09bab3;
+}
+tr:nth-child(odd) {
+  background-color: #03ffc4;
+}
+
+.table div::after {
+  content: "";
+  display: block;
+  width: 15%;
+  height: 4px;
+  background: #c7f2f2;
+}
+
+/* SOBRE FIM*/
+/* FOOTER */
+.rodape {
+  margin: 30px 0 20px 0;
+}
+
+.info {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.8em;
+}
+.copy {
+  padding: 10px 0;
+  text-align: center;
+  background-color: #2da2cc;
+}
