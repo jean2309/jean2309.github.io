@@ -379,6 +379,19 @@ p {
   padding: 60px 0px 40px 0px;
   font-size: 1.725em;
 }
+#link-outros a {
+  color: #0085be;
+}
+#link-outros a:hover {
+  color: tomato;
+}
+#link-outros a:visited {
+  color: #0085be;
+}
+#link-outros a:visited:hover {
+  color: tomato;
+}
+
 .btn::after {
   content: "";
   display: block;

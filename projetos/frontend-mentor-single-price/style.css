@@ -1,0 +1,129 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  margin: 100px 0;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+}
+
+.grid-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 680px;
+  margin: 0 auto;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.parte1 {
+  display: block;
+  grid-column: 1 / 2;
+  padding: 50px;
+}
+.parte1 h1 {
+  color: hsl(179, 62%, 43%);
+  font-size: 1.49em;
+}
+.parte1 h2 {
+  color: hsl(71, 73%, 54%);
+  font-size: 1.1em;
+  margin: 20px 0 10px 0;
+}
+.parte1 p {
+  color: hsl(218, 22%, 67%);
+}
+
+.section2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 680px;
+  margin: 0 auto;
+  background-color: hsl(179, 62%, 43%);
+  border-radius: 0px 0px 10px 10px;
+}
+.parte2 {
+  grid-column: 1;
+  padding: 50px;
+  color: #fff;
+}
+.parte2 h2 {
+  margin: 30px 0 15px 0;
+  font-size: 2rem;
+}
+.parte2 h2 span {
+  font-weight: normal;
+  color: #80e3e5;
+  font-size: 16px;
+  margin-left: 5px;
+}
+.parte2 p {
+  color: hsl(204, 43%, 90%);
+  margin-bottom: 30px;
+}
+.parte2 button {
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 18px;
+  background-color: #bfdf32;
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+}
+/* Parte 3 */
+.parte3 {
+  grid-column: 2;
+  padding: 50px;
+  color: #fff;
+  background-color: hsl(179, 62%, 48%);
+  border-radius: 0px 0px 10px 0px;
+}
+
+.parte3 p {
+  margin-top: 20px;
+  color: hsl(204, 43%, 87%);
+  text-align: start;
+  line-height: 24px;
+}
+
+@media (max-width: 700px) {
+  .grid-section {
+    display: block;
+    grid-template-columns: 1fr;
+    max-width: 360px;
+    margin: 0 auto;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+
+  .section2 {
+    display: block;
+    max-width: 360px;
+    border-radius: 0px 0px 10px 10px;
+  }
+  .parte1 {
+    padding: 30px;
+  }
+  .parte1 h1 {
+    font-size: 1.2em;
+  }
+  .parte1 h2 {
+    font-size: 1em;
+  }
+
+  .parte2 {
+    padding: 30px;
+  }
+  .parte2 h2 {
+    margin: 20px 0 10px 0;
+  }
+  .parte3 {
+    padding: 30px 90px 30px 30px;
+    border-radius: 0px 0px 10px 10px;
+  }
+}
